@@ -1,0 +1,15 @@
+<p>
+  <img [alt]="john.name" [src]="john.urlPic"/>
+</p>
+<h4> Nom: {{john.name}} </h4>
+<h4>
+  Prénom: {{john.name}}
+</h4>
+<h5 id="age" *ngIf="isVisible"> Age : {{john.age}} </h5>
+<h3> <input [(ngModel)]="john.quote">  </h3>
+<h2> {{john.quote}} </h2>
+
+<button  (click)="isVisible = !isVisible"> Afficher/Masquer mon âge</button>
+
+
+

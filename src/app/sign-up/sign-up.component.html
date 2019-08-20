@@ -1,3 +1,6 @@
-<h1>Renseignez votre Email</h1><input type="email" name="email"/>
-
-<!--stackedit_data: eyJoaXN0b3J5IjpbMjQwNTQyNzI5XX0= -->
+<p>
+  <img [alt]="nom" [src]="imageSrc"/>
+  Hello {{nom}} !
+</p>
+<button (click)="direBonjour()">
+  <input [(ngModel)]="nom">
